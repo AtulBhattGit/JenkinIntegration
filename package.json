@@ -1,0 +1,26 @@
+{
+  "name": "jenkinintegration",
+  "version": "1.0.0",
+  "description": "This project is to check build run from jenkin",
+  "main": "index.js",
+  "scripts": {
+    "Cypress_Test": "cypress run",
+    "Cypress_Prod_Test": "npx cypress run --spec cypress/e2e/loginTest.cy.js --config-file prod.config.js",
+    "Cypress_Stage_Test": "npx cypress run --spec cypress/e2e/loginTest.cy.js --config-file stage.config.js",
+    "Cypress-Dashboard": "npx cypress run --record --key 909c19d0-634a-4dbc-bf7e-3b9923f97d93"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtulBhattGit/JenkinIntegration.git"
+  },
+  "keywords": [],
+  "author": "Atul Bhatt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtulBhattGit/JenkinIntegration/issues"
+  },
+  "homepage": "https://github.com/AtulBhattGit/JenkinIntegration#readme",
+  "dependencies": {
+    "cypress": "^14.0.2"
+  }
+}
